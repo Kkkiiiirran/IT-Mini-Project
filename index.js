@@ -28,6 +28,7 @@ function renderHtml() {
   menuArray.forEach(function (item) {
     renderHereEl.innerHTML += `<div class="container">
                               <img src="${item.location}" width="100px">
+            
                               <div>
                                 <h2>${item.name}</h2>
                                 <p>${item.ingredients}</p>
