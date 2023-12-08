@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Order</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/Pizza.png" />
+  </header>
+  <main>
+  <div id="lastRendering">
+    <div class="myzone">
+      <div id="renderHere"></div>
+      <div id="your-order"></div>
+    </div>
+    <div id="checkoutSection">
+    </div>
+    <div id="last"></div>
+  </div>
+    </main>
+    <div class="modal" id="modal">
+      <div class="main-inner-modal" id="main-inner-modal">
+        <div class="modal-inner">
+          <h2>Enter card details</h2>
+          <button class="modal-close-btn" id="modal-close-btn">X</button>
+        </div>
+        <form id="payment-form">
+            <div class="inner-model-information">
+            <input
+              type="text"
+              id="yourName"
+              name="yourName"
+              placeholder="Enter your name"
+              aria-label="Full name"
+              required
+            >
+            <input
+              type="number"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="Enter card number"
+              aria-label="Enter your card number"
+              required
+            >
+            <input
+              type="number"
+              id="cardCVV"
+              name="cardCVV"
+              placeholder="Enter CVV"
+              aria-label="Enter CVV"
+              required
+            >
+            </div>
+            
+              <button type="submit"  class="pay-btn" id="pay-btn">Pay</button>
+            
+        </form>
+      </div>
+    </div>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

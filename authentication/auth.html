@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Authentication App</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Authentication App</h1>
+    <form id="registerForm">
+      <label for="registerUsername">Username:</label>
+      <input type="text" id="registerUsername" required>
+      <label for="registerPassword">Password:</label>
+      <input type="password" id="registerPassword" required>
+      <button type="button" onclick="register()">Register</button>
+    </form>
+    <hr>
+    <form id="loginForm">
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" required>
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" required>
+      <button type="button" onclick="login()">Login</button>
+    </form>
+    <hr>
+    <button id="logoutButton" onclick="logout()">Logout</button>
+    <hr>
+    <button id="profileButton" onclick="checkProfile()">Check Profile</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
